@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MimicPlay | Long-Horizon Imitation Learning by Watching Human Play</title>
+    <title>DexCap: Scalable and Portable Mocap Data Collection System for Dexterous Manipulation</title>
     <script>
         var task_map = {
             "simple-object-manipulation": "simple_object_manipulation",
@@ -78,30 +78,23 @@
                     <div class="is-size-5 publication-authors">
             <span class="author-block">
                 <a target="_blank" href="https://www.chenwangjeremy.net/">Chen&#160;Wang</a><sup>1</sup>,
-                <a target="_blank" href="https://jimfan.me/">Linxi&#160;"Jim"&#160;Fan</a><sup>2</sup>,
-                <a target="_blank" href="https://web.stanford.edu/~jksun/">Jiankai&#160;Sun</a><sup>1</sup>,
+                <a target="_blank" href="https://hshi74.github.io/">Haochen&#160;Shi</a><sup>1</sup>,
+                <a target="_blank" href="https://tml.stanford.edu/people/weizhuo-ken-wang">Weizhuo&#160;Wang</a><sup>1</sup>,
                 <a target="_blank"
                    href="https://ai.stanford.edu/~zharu/">Ruohan&#160;Zhang</a><sup>1</sup>,
               <br>
                 <a target="_blank" href="https://profiles.stanford.edu/fei-fei-li">Li&#160;Fei-Fei</a><sup>1</sup>,
-                <a target="_blank" href="https://faculty.cc.gatech.edu/~danfei/">Danfei&#160;Xu</a><sup>2 3</sup>,
-                <a target="_blank" href="https://www.cs.utexas.edu/~yukez/">Yuke&#160;Zhu</a><sup>2 4 &dagger;</sup>,
-                <a target="_blank" href="http://tensorlab.cms.caltech.edu/users/anima/">Anima&#160;Anandkumar</a><sup>2 5 &dagger;</sup>
+                <a target="_blank" href="https://profiles.stanford.edu/c-karen-liu">Karen&#160;Liu</a><sup>1</sup>
             </span>
               </div>
 
               <div class="is-size-5 publication-authors">
-                  <span class="author-block"><sup>1</sup>Stanford, </span>
-                  <span class="author-block"><sup>2</sup>NVIDIA, </span>
-                  <span class="author-block"><sup>3</sup>Georgia Tech, </span>
-                  <span class="author-block"><sup>4</sup>UT Austin, </span>
-                  <span class="author-block"><sup>5</sup>Caltech, </span>
-                  <span class="author-block"><sup>&dagger;</sup>Equal Advising </span>
+                  <span class="author-block"><sup>1</sup>Stanford</span>
               </div>
               <div class="column has-text-centered">
               <div class="publication-links">
               <span class="link-block">
-                <a target="_blank" href="assets/MimicPlay.pdf"
+                <a target="_blank" href=""
                     class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -110,7 +103,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a target="_blank" href="https://arxiv.org/abs/2302.12422"
+                <a target="_blank" href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -119,7 +112,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a target="_blank" href="https://youtu.be/p8QsuOy6f_c"
+                <a target="_blank" href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -128,12 +121,20 @@
                 </a>
               </span>
               <span class="link-block">
-                <a target="_blank" href="https://github.com/j96w/MimicPlay"
+                <a target="_blank" href=""
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-github"></i>
                   </span>
                   <span>Code</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fab fa-github"></i>
+                  </span>
+                  <span>Document</span>
                 </a>
               </span>
                         </div>
@@ -192,22 +193,19 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p style="font-size: 125%">
-            Imitation Learning from human demonstrations is
-            a promising paradigm to teach robots manipulation skills in
-            the real world, but learning complex long-horizon tasks often
-            requires an unattainable amount of demonstrations. To reduce
-            the high data requirement, we resort to human play data &#8212 video sequences of people freely interacting
-            with the environment
-            using their hands. We hypothesize that even with different morphologies, human play data contain rich and
-            salient information
-            about physical interactions that can readily facilitate robot policy
-            learning. Motivated by this, we introduce a hierarchical learning
-            framework named MimicPlay that learns latent plans from
-            human play data to guide low-level visuomotor control trained on
-            a small number of teleoperated demonstrations. With systematic
-            evaluations of 14 long-horizon manipulation tasks in the real
-            world, we show that MimicPlay dramatically outperforms state-of-the-art imitation learning methods in task
-            success rate, generalization ability, and robustness to disturbances.
+            Imitation learning from human hand motion data presents a promising avenue for imbuing robots with human-like dexterity
+            in real-world manipulation tasks. Despite this potential, substantial challenges persist, particularly with the
+            portability of existing hand motion capture (mocap) systems and the complexity of translating mocap data into effective
+            robotic policies. To tackle these issues, we introduce DexCap, a portable hand motion capture system, alongside
+            DexIL, a novel imitation algorithm for training dexterous robot skills directly from human hand mocap data. DexCap
+            offers precise, occlusion-resistant tracking of wrist and finger motions based on SLAM and electromagnetic field
+            together with 3D observations of the environment. DexIL harnesses this rich dataset, applying inverse kinematics and
+            point cloud-based imitation learning to replicate human actions with robot hands. Beyond direct learning from human
+            motion, DexCap also offers an optional human-in-the-loop correction mechanism during policy rollouts to refine and
+            further improve robot performance with minimal human effort. Through extensive evaluation across six challenging
+            dexterous manipulation tasks, our approach not only demonstrates superior performance but also showcases the system's
+            capability to effectively learn from in-the-wild mocap data, paving the way for future data collection methods in the
+            pursuit of human-level robot dexterity.
           </p>
         </div>
       </div>
