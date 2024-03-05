@@ -42,7 +42,7 @@
             <a href="" target="_blank" class="button"><i class="ai ai-arxiv"></i>&emsp14;arXiv</a>
             <a href="" target="_blank" class="button"><i class="fa-light fa-file"></i>&emsp14;PDF</a>
             <a href="" target="_blank" class="button"><i class="fa-light fa-film"></i>&emsp14;Video</a>
-<!--            <a href="" target="_blank" class="button"><i class="fa-brands fa-x-twitter"></i>&emsp14;tl;dr</a>-->
+            <a href="" target="_blank" class="button"><i class="fa-brands fa-x-twitter"></i>&emsp14;tl;dr</a>
             <a href="" target="_blank" class="button"><i class="fa-light fa-code"></i>&emsp14;Code</a>
             <a href="" target="_blank" class="button"><i class="fa-light fa-face-smiling-hands"></i>&emsp14;Data</a>
             <a href="" target="_blank" class="button"><i class="fa-light fa-robot-astromech"></i>&emsp14;Hardware</a>
@@ -167,12 +167,51 @@
         </div>
     </div>
     <p>
-        Details of the human system. (a) Our setup includes a 3D-printed rack on a chest harness,
-        featuring a Realsense L515 LiDAR camera on top and three Realsense T265 tracking cameras below.
-        (b) An Intel NUC and power bank in a backpack power the system for approximately 40 minutes of data collection.
-        (c) The T265 cameras, initially in a known pose for calibration, are relocated to hand mounts during data collection to monitor palm positions,
-        ensuring consistency through a click-in design. Finger motions are captured by Rokoko gloves, accurately tracking the finger joint positions.
+        Overview of the DexCap system:
+        <br><b>Front design:</b> A camera rack on the chest is equipped with an RGB-D LiDAR camera and three SLAM tracking cameras.
+        <br><b>Back design:</b> A mini-PC and power bank in the backpack power the system for approximately 40 minutes of data collection.
+        <br><b>Data collection process:</b> The tracking cameras, initially placed in the camera rack for calibration,
+        are relocated to hand mounts during data collection to consistently track the palm positions.
+        Finger motions are captured by motion capture gloves.
     </p>
+
+
+    <h1>From Human to Robot</h1>
+    <div class="allegrofail">
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/human_to_robot.mp4" type="video/mp4">
+            </video>
+<!--            <div class="caption">-->
+<!--                <p>Pulling a robot with a rope until it falls</p>-->
+<!--            </div>-->
+        </div>
+    </div>
+    <p>
+        <b>Observation retargeting:</b> To simplify the process of switching the camera system between the human and robot,
+        a quick-release buckle has been integrated into the back of the camera rack, allowing for swift camera swaps
+        – in less than 20 seconds. In this way, the robot utilizes the same observation camera employed during human data collection.
+    </p>
+    <div class="allegrofail">
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/fingertip_ik.mp4" type="video/mp4">
+            </video>
+<!--            <div class="caption">-->
+<!--                <p>Pulling a robot with a rope until it falls</p>-->
+<!--            </div>-->
+        </div>
+    </div>
+    <p>
+        <b>Action retargeting:</b> To transfer human finger motion to the LEAP robot hand, we use fingertip
+        inverse kinematics (IK) to compute the 16-dimensional joint positions. Human finger motions are tracked
+        using a pair of motion capture gloves, which measure the 3D positions of the fingers relative to the palm.
+    </p>
+
+    <br>
+    <br>
+    <br>
+    <hr class="rounded">
 
     <h1>Method: Data Retargeting and Imitation Learning</h1>
     <div class="allegrofail">
@@ -191,31 +230,14 @@
         Based on the data, a robot policy is learned to output a sequence of future goal positions as the robot actions.
     </p>
 
-    <h1>From Human to Robot</h1>
-    <div class="allegrofail">
-        <div class="video_container">
-            <video autoplay muted playsinline loop preload="metadata">
-                <source src="assets/human_to_robot.mp4" type="video/mp4">
-            </video>
-<!--            <div class="caption">-->
-<!--                <p>Pulling a robot with a rope until it falls</p>-->
-<!--            </div>-->
-        </div>
-    </div>
-    <p>
-        To simplify the process of switching the camera system between the human and robot,
-        a quick-release buckle has been integrated into the back of the camera rack, allowing for swift camera swaps
-        – in less than 5 seconds. In this way, the robot utilizes the same observation camera employed during human data collection.
-    </p>
-
-    <h1>Fully Autonomous Policy Rollouts</h1>
+    <h1>Training Results</h1>
     <div class="allegrofail">
         <div class="video_container">
             <video autoplay muted playsinline loop controls preload="metadata">
                 <source src="assets/normal_ball.mp4" type="video/mp4">
             </video>
             <div class="caption">
-                <p>Policy learned with 30-minute human mocap data without any teleoperation.</p>
+                <p>Fully autonomous policy rollouts. Policy learned with 30-minute human mocap data without any teleoperation.</p>
             </div>
         </div>
     </div>
@@ -223,20 +245,23 @@
 <!--        xxx-->
 <!--    </p>-->
 
-    <h1>Bimanual Dexterous Manipulation</h1>
+    <h1>Bimanual Manipulation Task</h1>
     <div class="allegrofail">
         <div class="video_container">
             <video autoplay muted playsinline loop controls preload="metadata">
                 <source src="assets/normal_bimaual.mp4" type="video/mp4">
             </video>
             <div class="caption">
-                <p>0:00-0:09 collecting bimanual human mocap data; 0:10-1:47 fully autonomous policy rollouts (learned with 30-minute human mocap data without any teleoperation)</p>
+                <p>0:00-0:09 Collecting bimanual human mocap data <br>0:10-1:47 Fully autonomous policy rollouts (learned with 30-minute human mocap data without any teleoperation)</p>
             </div>
         </div>
     </div>
 <!--    <p>-->
 <!--        xxx-->
 <!--    </p>-->
+
+    <br>
+    <hr class="rounded">
 
     <h1>In-the-wild Data Collection with DexCap</h1>
     <div class="allegrofail">
@@ -253,14 +278,14 @@
 <!--        xxx-->
 <!--    </p>-->
 
-    <h1>Fully Autonomous Policy Rollouts (Trained objects)</h1>
+    <h1>Policy learned with In-the-wild DexCap Data</h1>
     <div class="allegrofail">
         <div class="video_container">
             <video autoplay muted playsinline loop controls preload="metadata">
                 <source src="assets/normal_packaging_trainedobj.mp4" type="video/mp4">
             </video>
             <div class="caption">
-                <p>Video playing in 1x speed. Policy learned with 1-hour in-the-wild human mocap data without any teleoperation.</p>
+                <p><b>Trained objects:</b> Fully autonomous policy rollouts in 1x speed.</p>
             </div>
         </div>
     </div>
@@ -268,7 +293,6 @@
 <!--        xxx-->
 <!--    </p>-->
 
-    <h1>Fully Autonomous Policy Rollouts (Unseen objects)</h1>
     <div class="allegrofail">
         <div class="video_container">
             <video autoplay muted playsinline loop controls preload="metadata">
@@ -278,13 +302,16 @@
                 <source src="assets/normal_packaging_unseenobj2.mp4" type="video/mp4">
             </video>
             <div class="caption">
-                <p>Video playing in 1x speed. Policy learned with 1-hour in-the-wild human mocap data without any teleoperation.</p>
+                <p><b>Unseen objects:</b>. Fully autonomous policy rollouts in 1x speed.</p>
             </div>
         </div>
     </div>
 <!--    <p>-->
 <!--        xxx-->
 <!--    </p>-->
+
+    <br>
+    <hr class="rounded">
 
     <h1>Fully Autonomous Policy Rollouts (Scissor cutting)</h1>
     <div class="allegrofail">
@@ -293,7 +320,7 @@
                 <source src="assets/normal_scissor.mp4" type="video/mp4">
             </video>
             <div class="caption">
-                <p>Video playing in 2x speed. Policy learned with 1-hour human mocap data and 30 human-in-the-loop corrections.</p>
+                <p>Fully autonomous policy rollouts in 2x speed. Policy learned with 1-hour human mocap data and 30 human-in-the-loop corrections.</p>
             </div>
             <br>
             <video autoplay muted playsinline loop controls preload="metadata">
@@ -314,7 +341,7 @@
                 <source src="assets/normal_tea.mp4" type="video/mp4">
             </video>
             <div class="caption">
-                <p>Video playing in 2x speed. Policy learned with 1-hour human mocap data and 30 human-in-the-loop corrections.</p>
+                <p>Fully autonomous policy rollouts in 2x speed. Policy learned with 1-hour human mocap data and 30 human-in-the-loop corrections.</p>
             </div>
             <br>
             <video autoplay muted playsinline loop controls preload="metadata">
