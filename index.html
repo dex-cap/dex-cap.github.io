@@ -230,7 +230,7 @@
         Based on the data, a robot policy is learned to output a sequence of future goal positions as the robot actions.
     </p>
 
-    <h1>Training Results</h1>
+    <h1>Results</h1>
     <div class="allegrofail">
         <div class="video_container">
             <video autoplay muted playsinline loop controls preload="metadata">
@@ -293,19 +293,22 @@
 <!--        xxx-->
 <!--    </p>-->
 
-    <div class="allegrofail">
+    <div class="allegrolower">
         <div class="video_container">
-            <video autoplay muted playsinline loop controls preload="metadata">
+            <video autoplay muted playsinline loop preload="metadata">
                 <source src="assets/normal_packaging_unseenobj.mp4" type="video/mp4">
-            </video>
-            <video autoplay muted playsinline loop controls preload="metadata">
-                <source src="assets/normal_packaging_unseenobj2.mp4" type="video/mp4">
             </video>
             <div class="caption">
                 <p><b>Unseen objects:</b>. Fully autonomous policy rollouts in 1x speed.</p>
             </div>
         </div>
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/normal_packaging_unseenobj2.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
+
 <!--    <p>-->
 <!--        xxx-->
 <!--    </p>-->
@@ -313,7 +316,51 @@
     <br>
     <hr class="rounded">
 
-    <h1>Fully Autonomous Policy Rollouts (Scissor cutting)</h1>
+    <h1>Human-in-the-loop correction with DexCap</h1>
+    <div class="image_container">
+        <img src="assets/HIL.png" alt="Description of Image">
+    </div>
+
+    <div class="allegrolower">
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/HIL_mode1.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p>xxxx</p>
+            </div>
+        </div>
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/HIL_mode2.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p>xxxx</p>
+            </div>
+        </div>
+    </div>
+
+    <h1>Results after finetuning - Tea preparing</h1>
+    <div class="allegrofail">
+        <div class="video_container">
+            <video autoplay muted playsinline loop controls preload="metadata">
+                <source src="assets/normal_tea.mp4" type="video/mp4">
+            </video>
+            <div class="caption">
+                <p>Fully autonomous policy rollouts in 2x speed. Policy learned with 1-hour human mocap data and 30 human-in-the-loop corrections.</p>
+            </div>
+            <br>
+            <video autoplay muted playsinline loop controls preload="metadata">
+                <source src="assets/normal_tea_more.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+<!--    <p>-->
+<!--        xxx-->
+<!--    </p>-->
+
+
+    <h1>Results after finetuning - Scissor cutting</h1>
     <div class="allegrofail">
         <div class="video_container">
             <video autoplay muted playsinline loop controls preload="metadata">
@@ -332,26 +379,6 @@
 <!--        xxx-->
 <!--    </p>-->
 
-
-
-    <h1>Fully Autonomous Policy Rollouts (Tea preparing)</h1>
-    <div class="allegrofail">
-        <div class="video_container">
-            <video autoplay muted playsinline loop controls preload="metadata">
-                <source src="assets/normal_tea.mp4" type="video/mp4">
-            </video>
-            <div class="caption">
-                <p>Fully autonomous policy rollouts in 2x speed. Policy learned with 1-hour human mocap data and 30 human-in-the-loop corrections.</p>
-            </div>
-            <br>
-            <video autoplay muted playsinline loop controls preload="metadata">
-                <source src="assets/normal_tea_more.mp4" type="video/mp4">
-            </video>
-        </div>
-    </div>
-<!--    <p>-->
-<!--        xxx-->
-<!--    </p>-->
 
 
 <!--    <br>-->
