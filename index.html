@@ -205,7 +205,7 @@
     <p>
         <b>Action retargeting:</b> To transfer human finger motion to the LEAP robot hand, we use fingertip
         inverse kinematics (IK) to compute the 16-dimensional joint positions. Human finger motions are tracked
-        using a pair of motion capture gloves, which measure the 3D positions of the fingers relative to the palm.
+        using a pair of motion capture gloves, which measure the 3D positions of the fingers relative to the palm based on electromagnetic field (EMF).
     </p>
 
     <br>
@@ -227,7 +227,7 @@
     <p>
         We first retarget the DexCap data to the robot embodiment by constructing 3D point clouds from RGB-D observations and transforming it into robot operation space.
         Meanwhile, the hand motion capture data is retargeted to the dexterous hand and robot arm with fingertip IK.
-        Based on the data, a robot policy is learned to output a sequence of future goal positions as the robot actions.
+        Based on the data, a Diffusion Policy is learned to take the point cloud as input and outputs a sequence of future goal positions as the robot actions.
     </p>
 
     <h1>Results</h1>
