@@ -317,31 +317,43 @@
     <hr class="rounded">
 
     <h1>Human-in-the-loop correction with DexCap</h1>
-    <div class="image_container">
-        <img src="assets/HIL.png" alt="Description of Image">
-    </div>
+<!--    <div class="image_container">-->
+<!--        <img src="assets/HIL.png" alt="Description of Image">-->
+<!--    </div>-->
     <br>
     <div class="allegrolower">
         <div class="video_container">
             <video autoplay muted playsinline loop controls preload="metadata">
                 <source src="assets/HIL_mode1.mp4" type="video/mp4">
             </video>
-            <div class="caption">
-                <p>xxxx</p>
-            </div>
+<!--            <div class="caption">-->
+<!--                <p>xxxx</p>-->
+<!--            </div>-->
         </div>
         <div class="video_container">
             <video autoplay muted playsinline loop controls preload="metadata">
                 <source src="assets/HIL_mode2.mp4" type="video/mp4">
             </video>
-            <div class="caption">
-                <p>xxxx</p>
-            </div>
+<!--            <div class="caption">-->
+<!--                <p>xxxx</p>-->
+<!--            </div>-->
         </div>
     </div>
+    <p>
+        DexCap supports two types of human-in-the-loop correction during the policy rollouts: <br>
+        <b>(1). Residual correction</b> measures the 3D delta position changes of the human wrist and incorporates them as residual actions to the robot's wrist movements.
+        This mode enables minimal movement but requiring more precise control.<br>
+        <b>(2). Teleoperation</b> directly translates full human hand motions to the robot end-effector actions based on inverse kinematics.
+        This mode enables the full control over the robot but requiring more effort.<br>
+        Users can switch between the two modes by stepping on the foot pedal during the rollouts.
+    </p>
+
     <div class="image_container">
         <img src="assets/HIL_method.png" alt="Description of Image">
     </div>
+    <p>
+        The corrections are stored in a new dataset and uniformly sampled with the original dataset for fine-tuning the robot policy
+    </p>
 
     <h1>Results after finetuning - Tea preparing</h1>
     <div class="allegrofail">
