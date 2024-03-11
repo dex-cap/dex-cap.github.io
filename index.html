@@ -140,13 +140,15 @@
             <h1>Abstract</h1>
             <p>
                 Imitation learning from human hand motion data presents a promising avenue for imbuing robots with human-like dexterity in real-world manipulation tasks.
-                Despite this potential, substantial challenges persist. These include the portability of existing hand motion capture (mocap) systems and the complexity of translating mocap data into effective robotic policies.
-                To tackle these issues, we introduce DexCap, a portable hand motion capture system. Alongside DexCap, we present DexIL, a novel imitation algorithm for training dexterous robot skills directly from human hand mocap data.
-                DexCap offers precise, occlusion-resistant tracking of wrist and finger motions. It does this based on SLAM and electromagnetic fields, together with 3D observations of the environment.
-                Utilizing this rich dataset, DexIL employs inverse kinematics and point cloud-based imitation learning to seamlessly replicate human actions with robot hands.
-                Beyond direct learning from human motion, DexCap also offers an optional human-in-the-loop correction mechanism. This occurs during policy rollouts to refine and further improve robot performance with minimal human effort.
-                Through extensive evaluation across six challenging dexterous manipulation tasks, our approach not only demonstrates superior performance. It also showcases the system's capability to effectively learn from in-the-wild mocap data.
-                This paves the way for future data collection methods in the pursuit of human-level robot dexterity.
+                Despite this potential, substantial challenges persist, particularly with the portability of existing hand motion capture (mocap) systems
+                and the difficulty of translating mocap data into effective control policies. To tackle these issues, we introduce DexCap, a portable
+                hand motion capture system, alongside DexIL, a novel imitation algorithm for training dexterous robot skills directly from human hand
+                mocap data. DexCap offers precise, occlusion-resistant tracking of wrist and finger motions based on SLAM and electromagnetic field together
+                with 3D observations of the environment. Utilizing this rich dataset, DexIL employs inverse kinematics and point cloud-based imitation learning
+                to replicate human actions with robot hands. Beyond learning from human motion, DexCap also offers an optional human-in-the-loop correction mechanism
+                to refine and further improve robot performance. Through extensive evaluation across six dexterous manipulation tasks, our approach not only demonstrates
+                superior performance but also showcases the system's capability to effectively learn from in-the-wild mocap data, paving the way for future data collection
+                methods for dexterous manipulation.
             </p>
         </div>
     </div>
@@ -562,14 +564,12 @@
 
     <h1>BibTeX</h1>
     <p class="bibtex">
-        xxx
-<!--        @article{HumanoidTransformer2023,<br>-->
-<!--        &nbsp;&nbsp;title={Learning Humanoid Locomotion with Transformers},<br>-->
-<!--        &nbsp;&nbsp;author={Ilija Radosavovic and Tete Xiao and Bike Zhang and Trevor Darrell and Jitendra Malik and-->
-<!--        Koushil Sreenath},<br>-->
-<!--        &nbsp;&nbsp;year={2023},<br>-->
-<!--        &nbsp;&nbsp;journal={arXiv:2303.03381}<br>-->
-<!--        }-->
+        @article{wang2024dexcap,
+          title={},
+          author={},
+          journal={},
+          year={}
+        }
     </p>
 </div>
 </body>
