@@ -43,7 +43,7 @@
             <a href="" target="_blank" class="button"><i class="fa-light fa-file"></i>&emsp14;PDF</a>
             <a href="" target="_blank" class="button"><i class="fa-light fa-film"></i>&emsp14;Video</a>
             <a href="" target="_blank" class="button"><i class="fa-brands fa-x-twitter"></i>&emsp14;tl;dr</a>
-            <a href="" target="_blank" class="button"><i class="fa-light fa-code"></i>&emsp14;Code</a>
+            <a href="https://github.com/j96w/DexCap" target="_blank" class="button"><i class="fa-light fa-code"></i>&emsp14;Code</a>
             <a href="" target="_blank" class="button"><i class="fa-light fa-face-smiling-hands"></i>&emsp14;Data</a>
             <a href="" target="_blank" class="button"><i class="fa-light fa-robot-astromech"></i>&emsp14;Hardware</a>
         </div>
@@ -206,6 +206,18 @@
         <b>Action retargeting:</b> To transfer human finger motion to the LEAP robot hand, we use fingertip
         inverse kinematics (IK) to compute the 16-dimensional joint positions. Human finger motions are tracked
         using a pair of motion capture gloves, which measure the 3D positions of the fingers relative to the palm based on electromagnetic field (EMF).
+    </p>
+
+    <div class="allegrofail">
+        <div class="video_container">
+            <video autoplay muted playsinline loop preload="metadata">
+                <source src="assets/dataset.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+    <p>
+        <b>Visual gap:</b> To further bridge the visual gap between human hand and robot hand,
+        we use forward kinematics to genrate a point cloud mesh of the robot hand and add it to the pointcloud observation as is shown in this video.
     </p>
 
     <br>
