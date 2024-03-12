@@ -207,7 +207,7 @@ body, html {
     position: relative;
     margin: auto;
     padding-top: 10px;
-    width: 44.7%;
+    width: 48.7%;
 }
 
 /* Hide the images by default */
@@ -393,7 +393,7 @@ hr.rounded {
     background: #f2f2f2;
     border-radius: 10px;
     height: 2px;
-    width: 44.7%;
+    width: 48.7%;
     margin-left: auto;
     margin-right: auto;
     mix-blend-mode: normal;
@@ -406,7 +406,7 @@ hr.rounded {
     font-weight: normal;
     font-size: 1.8vw;
     padding-top: 2vw;
-    width: 44.7%;
+    width: 48.7%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -418,7 +418,7 @@ hr.rounded {
     font-weight: normal;
     font-size: 1.1vw;
     line-height: 1.4;
-    width: 44.7%;
+    width: 48.7%;
     margin-left: auto;
     margin-right: auto;
     word-wrap: break-word;
@@ -431,7 +431,7 @@ hr.rounded {
 }
 
 #overview > video {
-    max-width: 44.7%;
+    max-width: 48.7%;
     max-height: 45%;
     display: block;
     margin-left: auto;
@@ -440,7 +440,7 @@ hr.rounded {
 
 
 #overview > .video_container {
-    max-width: 44.7%;
+    max-width: 48.7%;
     max-height: 45%;
     margin-left: auto;
     margin-right: auto;
@@ -474,7 +474,7 @@ hr.rounded {
 }
 
 #overview > .image_container {
-    max-width: 44.7%;
+    max-width: 48.7%;
     max-height: 45%;
     margin-left: auto;
     margin-right: auto;
@@ -530,7 +530,7 @@ hr.rounded {
 }
 
 .approach > .video_container {
-    max-width: 44.7%;
+    max-width: 48.7%;
 }
 
 .approach > .video_container > video {
@@ -771,7 +771,7 @@ hr.rounded {
 }
 
 .scaling > video {
-    max-width: 44.7%;
+    max-width: 48.7%;
     max-height: 22%;
     margin-left: 0.2vw;
     margin-right: 0.2vw;
@@ -923,7 +923,7 @@ hr.rounded {
 
 #overview > .bibtex {
     font-family: "Courier", monospace;
-    font-size: 0.6vw !important;
+    font-size: 0.9vw !important;
     color: #2f2f2f;
     background-color: #f2f2f2;
     border: 5px;
@@ -1022,7 +1022,7 @@ html.w-mod-touch * {
 .w-container {
     margin-left: auto;
     margin-right: auto;
-    max-width: 44.7%
+    max-width: 48.7%
 }
 
 .w-container:after, .w-container:before {
