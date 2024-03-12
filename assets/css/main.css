@@ -116,7 +116,7 @@ body, html {
     color: #2E2D29;
     font-family: "Source Serif 4", serif;
     font-weight: normal;
-    font-size: 0.8vw;
+    font-size: 1.0vw;
     width: 37%;
     padding-top: 2vw;
     margin-left: auto;
@@ -133,7 +133,7 @@ body, html {
     color: #2E2D29;
     font-family: "Source Serif 4", serif;
     font-weight: normal;
-    font-size: 1vw;
+    font-size: 1.1vw;
     padding-top: 1.5vw;
     justify-items: center;
     justify-content: center;
@@ -143,8 +143,8 @@ body, html {
 
 .author-name {
     text-align: center;
-    padding-right: 0.8vw;
-    padding-left: 0.8vw;
+    padding-right: 1.0vw;
+    padding-left: 1.0vw;
     color: #2E2D29;
 }
 
@@ -416,7 +416,7 @@ hr.rounded {
     color: #2E2D29;
     font-family: "Source Serif 4", serif;
     font-weight: normal;
-    font-size: 0.8vw;
+    font-size: 1.0vw;
     line-height: 1.4;
     width: 44.7%;
     margin-left: auto;
