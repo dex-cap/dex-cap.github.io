@@ -116,7 +116,7 @@ body, html {
     color: #2E2D29;
     font-family: "Source Serif 4", serif;
     font-weight: normal;
-    font-size: 1.0vw;
+    font-size: 1.1vw;
     width: 37%;
     padding-top: 2vw;
     margin-left: auto;
@@ -133,7 +133,7 @@ body, html {
     color: #2E2D29;
     font-family: "Source Serif 4", serif;
     font-weight: normal;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
     padding-top: 1.5vw;
     justify-items: center;
     justify-content: center;
@@ -143,8 +143,8 @@ body, html {
 
 .author-name {
     text-align: center;
-    padding-right: 1.0vw;
-    padding-left: 1.0vw;
+    padding-right: 1.1vw;
+    padding-left: 1.1vw;
     color: #2E2D29;
 }
 
@@ -416,7 +416,7 @@ hr.rounded {
     color: #2E2D29;
     font-family: "Source Serif 4", serif;
     font-weight: normal;
-    font-size: 1.0vw;
+    font-size: 1.1vw;
     line-height: 1.4;
     width: 44.7%;
     margin-left: auto;
@@ -469,7 +469,7 @@ hr.rounded {
     width: 100% !important;
     color: #53565A !important;
     font-family: "Source Serif 4", serif;
-    font-size: 0.7vw !important;
+    font-size: 0.9vw !important;
     font-weight: 500 !important;
 }
 
@@ -499,7 +499,7 @@ hr.rounded {
     width: 100% !important;
     color: #53565A !important;
     font-family: "Source Serif 4", serif;
-    font-size: 0.7vw !important;
+    font-size: 0.9vw !important;
     font-weight: 500 !important;
 }
 
@@ -549,7 +549,7 @@ hr.rounded {
     width: 100% !important;
     color: #53565A !important;
     font-family: "Source Serif 4", serif;
-    font-size: 0.7vw !important;
+    font-size: 0.9vw !important;
     font-weight: 500 !important;
 }
 
@@ -637,7 +637,7 @@ hr.rounded {
     width: 400% !important;
     color: #53565A !important;
     font-family: "Source Serif 4", serif;
-    font-size: 0.7vw !important;
+    font-size: 0.9vw !important;
     font-weight: 500 !important;
 }
 
@@ -692,7 +692,7 @@ hr.rounded {
     width: 200% !important;
     color: #53565A !important;
     font-family: "Source Serif 4", serif;
-    font-size: 0.7vw !important;
+    font-size: 0.9vw !important;
     font-weight: 500 !important;
 }
 
@@ -852,7 +852,7 @@ hr.rounded {
     width: 100% !important;
     color: #53565A !important;
     font-family: "Source Serif 4", serif;
-    font-size: 0.7vw !important;
+    font-size: 0.9vw !important;
     font-weight: 500 !important;
 }
 
