@@ -135,10 +135,10 @@ body, html {
     font-weight: normal;
     font-size: 1.2vw;
     padding-top: 1.5vw;
-    justify-items: center;
-    justify-content: center;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
+    display: flex; /* Switch to flexbox */
+    justify-content: center; /* Center the items */
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    gap: 0.0vw; /* Add space between items */
 }
 
 .author-name {
